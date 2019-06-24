@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quan ly nhan vien</title>
+    </head>
+    <style>
+            #tbDanhSachNhanVien {
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            #tbDanhSachNhanVien td, #tbDanhSachNhanVien th {
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+            
+            #tbDanhSachNhanVien tr:nth-child(even){background-color: #f2f2f2;}
+            
+            #tbDanhSachNhanVien tr:hover {background-color: #ddd;}
+            
+            #tbDanhSachNhanVien th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #4CAF50;
+              color: white;
+            }
+            </style>
+    <body>
+            <label for="">manv</label>
+            <input type="number" name="manv" id="manv" required/>
+            <br>
+            <label for="">hoten</label>
+            <input type="text" name="hoten" id="hoten" required/>
+            <br>
+            <label for="">tuoi</label>
+            <input type="number" name="tuoi" id="tuoi"/>
+            <br>
+            <label for="">diachi</label>
+            <input type="text" name="diachi" id="diachi" />
+            <!-- <br>
+            <label for="">luong co ban</label>
+            <input type="number" name="lcb" id="lcb" />
+            <br>
+            <label for="">he so luong</label>
+            <input type="number" name="hsl" id="hsl" /> -->
+            <br>
+            <br>
+            <label for="">loai nv:</label>
+            <br>
+            <input type="radio" name="loainv" value="nvsx" checked> Nhân viên sản xuất<br>
+            <input type="radio" name="loainv" value="nvcn"> Nhân viên công nhật<br>
+            <input type="radio" name="loainv" value="nvql"> Nhân viên quản lý<br>
+            <br>
+            <br>
+            <div id="form-them">
+                <label for="">so san pham</label>
+                <input type="number" name="slsp" id="slsp" value="0"/>
+            </div>
+            
+            <br>
+            <br>
+            <button id="themnv">Them nhan vien</button>
+            <button id="hienthidsnv">Hiển Thị/Ẩn Danh sach nhan vien</button>
+            <button id="xemTongLuong">Xem Tổng Lương</button>
+            <button id="luongmax">Nhân viên lương cao nhất</button>
+            <button id="luongmin">Nhân viên lương thấp nhất</button>
+        <br>
+            <br>
+            <table id="tbDanhSachNhanVien">
+
+            </table>
+        <br>
+        <br>
+        <h2 id="tongluong"></h2>
+        <h2 id="nvLuongMinMax"></h2>
+        <hr width="100%">
+        <h2>Xem thông tin nhân viên</h2>
+        <label>Nhập mã nhân viên cần tìm</label>
+        <input type="number" name="keymanv" id="keymanv">
+        <button id="searchNV">Tìm</button>
+        <br>
+        <br>
+        <div id="infoNV"></div>
+        <script src="./dist/bundle.js"></script>
+    </body>
+</html>
