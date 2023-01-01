@@ -6,10 +6,10 @@
   "dependencies": {
     "live-server": "^1.2.1",
     "liveserver": "^0.1.20",
-    "webpack": "^4.35.0"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
